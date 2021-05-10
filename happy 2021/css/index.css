@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+body{
+    background: url("/img/2.gif");
+    background-size: cover;
+}
+.message p{
+    font-size: 32px;
+    letter-spacing: 1rem;
+    color: rgb(33, 245, 13);
+    text-shadow: 5px 4px rgb(255, 8, 0);
+}
+.message h1 ,.message p{
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+}
