@@ -1,9 +1,6 @@
 if(!JSON.parse(localStorage.getItem('todos'))){
     localStorage.setItem('todos', '[]')
 }
-else{
-    console.log("Todos are not actually blank")
-}
 const addtodo = ()=>{
     let todos = localStorage.getItem('todos');
     let title = document.getElementById('title').value;
@@ -36,13 +33,11 @@ const fetchtodo = () =>{
     let Alltodocontents = [];
     let todos = JSON.parse(localStorage.getItem('todos'))
     var str = ""
-    // console.log(JSON.parse(localStorage.getItem('todos')))
     for (let i = 0; i < todos.length; i++) {
         Alltodocontents.push(todos[i])
     }
 
     if(JSON.parse(localStorage.getItem('todos')).length !== 0){
-        console.log('1')
         Alltodocontents.forEach(todo => {
             str += `
             <tr>
@@ -55,10 +50,8 @@ const fetchtodo = () =>{
             `;
             document.querySelector('#tbody').innerHTML = str
         });
-        console.log(Alltodocontents)
     }
     else{
-        console.log('2')
         str = '';
         document.querySelector('#tbody').innerHTML = str
     }
@@ -68,6 +61,18 @@ const deletetodo = (sno) =>{
     const filteredtodo = JSON.parse(localStorage.getItem('todos')).filter((todo) => todo.sno !== parseInt(sno));
     localStorage.setItem('todos', JSON.stringify(filteredtodo))
     fetchtodo();
+}
+
+const cleartodo = ()=>{
+    const cfm = confirm("Are you sure you want to delete All the Todos:")
+    if(cfm){
+        localStorage.clear()
+        window.location.reload();
+        fetchtodo();
+    }
+    else{
+        fetchtodo();
+    }
 }
 
 fetchtodo();
