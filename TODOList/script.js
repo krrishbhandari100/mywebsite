@@ -1,3 +1,9 @@
+if(!JSON.parse(localStorage.getItem('todos'))){
+    localStorage.setItem('todos', '[]')
+}
+else{
+    console.log("Todos are not actually blank")
+}
 const addtodo = ()=>{
     let todos = localStorage.getItem('todos');
     let title = document.getElementById('title').value;
