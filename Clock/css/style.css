@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#clock{
+    background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Horlo%C4%9Do_001.svg/1200px-Horlo%C4%9Do_001.svg.png');
+    background-size: cover;
+    height: 500px;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.hour, .minute, .second{
+    width: 3px;
+    border-radius: 5px;
+}
+
+.hour{
+    height: 100px;
+    background-color: red;
+    margin-top: -99px;
+    transform-origin: bottom;
+}
+
+.minute{
+    height: 180px;
+    background-color: rgb(25, 57, 236);
+    margin-top: -179px;
+    margin-left: -1px;
+    transform-origin: bottom;
+}
+
+.second{
+    transform-origin: bottom;
+    height: 198px;
+    background-color: green;
+    margin-top: -197px;
+    margin-left: -2px;
+}
