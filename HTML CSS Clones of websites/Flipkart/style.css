@@ -35,3 +35,9 @@
     width: 350px;
     justify-content: space-evenly;
 }
+
+.product-nav {
+    height: 112px;
+    box-shadow: 10px 5px 5px gray;
+    background-color: white;
+}
