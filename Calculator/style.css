@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+#sum {
+    width: 99%;
+    height: 32px;
+    font-size: 22px;
+}
+
+.calculator {
+    width: 300px;
+    height: fit-content;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.btn {
+    margin: 6px;
+    height: 32px;
+    padding: 6px;
+    border: 0;
+    border-radius: 9px;
+}

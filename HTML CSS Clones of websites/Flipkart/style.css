@@ -1,0 +1,37 @@
+.part1 {
+    width: 685px;
+}
+
+.search {
+    width: 400px;
+    height: 36px;
+    font-size: 14px;
+    padding: 0 16px;
+}
+
+.btn {
+    color: #2874f0;
+    font-weight: 700;
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 2px;
+    height: 32px;
+    padding: 5px 40px;
+    border: 1px solid #dbdbdb;
+    font-size: 17px;
+}
+
+.schbtn {
+    position: absolute;
+    padding: 12px 18px;
+    left: 48.5vw;
+    border: 0;
+    background: transparent;
+    color: blue;
+    font-size: 17px;
+}
+
+.part2 {
+    width: 350px;
+    justify-content: space-evenly;
+}
